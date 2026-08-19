@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunil Gentyala</title>
+<meta name="description" content="Lead Cybersecurity and AI Security Consultant at HCLTech. IEEE Senior Member. Creator of ContextGuard and GSH Framework.">
+<meta name="google-site-verification" content="Yj00qCAB_jl6NXbSTyNhmGMWu4UDzm1_xuG3VikKjYY" />
+<link rel="canonical" href="https://sunilgentyala.com/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Sunil Gentyala">
+<meta property="og:description" content="Lead Cybersecurity and AI Security Consultant at HCLTech. IEEE Senior Member. Creator of ContextGuard and GSH Framework.">
+<meta property="og:url" content="https://sunilgentyala.com/">
+<meta property="og:image" content="https://sunilgentyala.com/profile.jpg">
+<meta property="profile:first_name" content="Sunil">
+<meta property="profile:last_name" content="Gentyala">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sunil Gentyala">
+<meta name="twitter:description" content="Lead Cybersecurity and AI Security Consultant at HCLTech. IEEE Senior Member. Creator of ContextGuard and GSH Framework.">
+<meta name="twitter:image" content="https://sunilgentyala.com/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f8f8f8;
+    --border: #e8e8e8;
+    --text: #222222;
+    --muted: #666666;
+    --accent: #0066cc;
+    --accent-hover: #004499;
+    --tag-bg: #eef4ff;
+    --tag-color: #0066cc;
+    --award-color: #a07000;
+  }
+
+  [data-theme="dark"] {
+    --bg: #1a1a1a;
+    --surface: #222222;
+    --border: #333333;
+    --text: #e8e8e8;
+    --muted: #999999;
+    --accent: #4da6ff;
+    --accent-hover: #80c0ff;
+    --tag-bg: #1a2d4a;
+    --tag-color: #4da6ff;
+    --award-color: #f0c040;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  .section-heading, #about { scroll-margin-top: 80px; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Sans 3', Georgia, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    transition: background 0.2s, color 0.2s;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+  .topnav {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .topnav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .topnav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text);
+  }
+
+  .topnav-brand:hover { text-decoration: none; }
+
+  .topnav-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .topnav-name {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .topnav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .topnav-links a {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .topnav-links a:hover { color: var(--accent); text-decoration: none; }
+
+  .topnav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .topnav-contact {
+    background: var(--accent);
+    color: #fff !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.45rem 0.95rem;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .topnav-contact:hover { background: var(--accent-hover); text-decoration: none; }
+
+  @media (max-width: 720px) {
+    .topnav-links { display: none; }
+    .topnav-inner { padding: 0.75rem 1.25rem; }
+  }
+
+  .theme-toggle {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    color: var(--text);
+    flex-shrink: 0;
+  }
+  .theme-toggle:hover { background: var(--border); }
+
+  #theme-icon { display: inline-block; transition: transform 0.4s ease; }
+  @keyframes spin-icon { from { transform: rotate(0deg); } to { transform: rotate(180deg); } }
+  .theme-toggle.spinning #theme-icon { animation: spin-icon 0.35s ease; }
+
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+  }
+
+  .stat-tile {
+    background: var(--surface);
+    padding: 1rem 0.6rem;
+    text-align: center;
+    transition: background 0.15s ease;
+  }
+
+  .stat-tile:hover { background: var(--bg); }
+
+  .stat-value {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--accent);
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+    line-height: 1.4;
+  }
+
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+
+  .sidebar {
+    position: sticky;
+    top: 5.5rem;
+  }
+
+  .profile-photo-placeholder {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 3px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    font-size: 2.5rem;
+    color: var(--accent);
+    font-weight: 700;
+    font-family: Georgia, serif;
+    letter-spacing: -0.04em;
+  }
+
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.25rem;
+    border: 3px solid var(--border);
+  }
+
+  .sidebar-name {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+  }
+
+  .sidebar-title {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+  }
+
+  .sidebar-org {
+    font-size: 0.78rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+  }
+
+  .sidebar-links {
+    list-style: none;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .sidebar-links li { font-size: 0.8rem; }
+
+  .sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    transition: color 0.15s;
+  }
+
+  .sidebar-links li a:hover {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .icon {
+    font-size: 0.85rem;
+    width: 1.2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .main h1 {
+    font-family: Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.85;
+  }
+
+  .bio p + p { margin-top: 0.85rem; }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--tag-bg);
+    border-radius: 999px;
+    padding: 0.4rem 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .focus-areas {
+    margin: -1rem 0 2.5rem;
+  }
+
+  .focus-label {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+  }
+
+  .focus-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .focus-chip {
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .section-heading {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .sh-icon {
+    color: var(--accent);
+    font-size: 1.05rem;
+    font-weight: 400;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1rem;
+    padding: 0.65rem 0.75rem;
+    margin: 0 -0.75rem;
+    border-bottom: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.865rem;
+    line-height: 1.6;
+    transition: background 0.15s ease;
+  }
+
+  .timeline-item:hover { background: var(--surface); }
+
+  .timeline-item:last-child { border-bottom: none; }
+
+  .tl-date {
+    color: var(--muted);
+    font-size: 0.76rem;
+    padding-top: 0.1rem;
+    font-weight: 500;
+  }
+
+  .tl-award {
+    color: var(--award-color);
+    font-weight: 600;
+  }
+
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .pub-item {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    padding: 0.6rem 1rem;
+    margin: 0 -1rem;
+    border-radius: 8px;
+    transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .pub-item:hover {
+    background: var(--surface);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  [data-theme="dark"] .pub-item:hover { box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
+
+  .pub-title {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+  }
+
+  .pub-authors {
+    color: var(--muted);
+    margin-bottom: 0.2rem;
+    font-size: 0.82rem;
+  }
+
+  .pub-authors .me { color: var(--text); font-weight: 600; }
+
+  .pub-venue {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.82rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .pub-links { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+
+  .pub-tag {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    background: var(--tag-bg);
+    color: var(--tag-color);
+    font-weight: 500;
+  }
+
+  .pub-tag.award { background: #fff8df; color: #946e00; }
+  [data-theme="dark"] .pub-tag.award { background: #382a00; color: #f0c040; }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (min-width: 1020px) {
+    .project-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .quantum-highlight {
+    background: var(--tag-bg);
+    border: 1px solid var(--accent);
+    border-radius: 14px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .quantum-highlight-label {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.02rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .quantum-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .quantum-highlight .project-card { background: var(--bg); }
+
+  .quantum-highlight-note {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 1.1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .quantum-grid { grid-template-columns: 1fr; }
+  }
+
+  .project-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    color: var(--text);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+
+  .project-card:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  [data-theme="dark"] .project-card:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35); }
+
+  .project-title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 0.35rem;
+    color: var(--text);
+  }
+
+  .project-card:hover .project-title { color: var(--accent); }
+
+  .project-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 0.55rem;
+  }
+
+  @media (max-width: 660px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 660px) {
+    .page { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.25rem; }
+    .sidebar { position: static; }
+    .timeline-item { grid-template-columns: 80px 1fr; gap: 0.6rem; }
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sunil Gentyala",
+  "jobTitle": "Lead Cybersecurity and AI Security Consultant",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "HCLTech"
+  },
+  "url": "https://sunilgentyala.com",
+  "image": "https://sunilgentyala.com/profile.jpg",
+  "email": "mailto:sunil.gentyala@ieee.org",
+  "sameAs": [
+    "https://orcid.org/0009-0005-2642-3479",
+    "https://ieeexplore.ieee.org/author/445793536496057",
+    "https://www.linkedin.com/in/sunil-gentyala/",
+    "https://github.com/sunilgentyala",
+    "https://doi.org/10.5281/zenodo.19241166",
+    "https://www.scworld.com/contributor/sunil-gentyala"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="#top" class="topnav-brand">
+      <span class="topnav-mark">SG</span>
+      <span class="topnav-name">Sunil Gentyala</span>
+    </a>
+    <nav class="topnav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#media">Media</a>
+    </nav>
+    <div class="topnav-actions">
+      <a class="topnav-contact" href="mailto:sunil.gentyala@ieee.org">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+        <span id="theme-icon">☾</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="page" id="top">
+
+  <aside class="sidebar">
+    <!--
+      To add your real photo, save it as images/profile.jpg in your repo, then replace
+      the placeholder div below with:
+      <img src="images/profile.jpg" alt="Sunil Gentyala" class="profile-photo">
+    -->
+    <img src="profile.jpg" alt="Sunil Gentyala" class="profile-photo">
+
+    <div class="sidebar-name">Sunil Gentyala</div>
+    <div class="sidebar-title">Lead Cybersecurity &amp;<br>AI Security Consultant</div>
+    <div class="sidebar-org">HCLTech &bull; Dallas, TX</div>
+
+    <ul class="sidebar-links">
+      <li>
+        <a href="mailto:sunil.gentyala@ieee.org">
+          <span class="icon">✉</span>sunil.gentyala@ieee.org
+        </a>
+      </li>
+      <li>
+        <a href="mailto:gentyalas@hcltech.com">
+          <span class="icon">✉</span>gentyalas@hcltech.com
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/sunilgentyala" target="_blank">
+          <span class="icon">⌥</span>github.com/sunilgentyala
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sunil-gentyala/" target="_blank">
+          <span class="icon">in</span>LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://orcid.org/0009-0005-2642-3479" target="_blank">
+          <span class="icon">◎</span>ORCID
+        </a>
+      </li>
+      <li>
+        <a href="https://ieeexplore.ieee.org/author/445793536496057" target="_blank">
+          <span class="icon">📚</span>IEEE Xplore Author Profile
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.5281/zenodo.19241166" target="_blank">
+          <span class="icon">📄</span>Zenodo Publications
+        </a>
+      </li>
+      <li>
+        <a href="https://cloudsecurityalliance.org/" target="_blank">
+          <span class="icon">☁</span>Cloud Security Alliance
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <div class="hero-eyebrow"><span class="dot"></span>IEEE Senior Member &middot; AI, Agentic Security &amp; Post-Quantum Cryptography Research</div>
+    <h1>Sunil Gentyala</h1>
+
+    <div class="bio" id="about">
+      <p>
+        Twenty years in enterprise security teach you something certifications alone never will: the distance between a well-designed control and a resilient one is measured not in policy documents, but in decisions made under pressure, at scale, with incomplete information. That gap is where Sunil Gentyala's career has lived.
+      </p>
+      <p>
+        He is Lead Cybersecurity and AI Security Consultant at <a href="https://www.hcltech.com/" target="_blank">HCLTech</a>, where he leads an 11-person security team across onsite and offshore environments, spanning multi-cloud security (Azure, AWS, GCP), enterprise identity and access management, application security, and AI/ML security for Fortune 500 clients including Uber, Disney, and Royal Caribbean. He serves as HCLTech's designated expert representative to the <a href="https://cloudsecurityalliance.org/" target="_blank">Cloud Security Alliance</a>.
+      </p>
+      <p>
+        As a scholarly researcher, his agentic AI security work has moved from internal tooling to externally cited reference material. <a href="https://github.com/sunilgentyala/AegisSwarm-Core" target="_blank"><strong>AegisSwarm-Core</strong></a>, his zero-trust governance framework for autonomous multi-agent AI networks, was published by the <a href="https://cloudsecurityalliance.org/blog/2026/06/24/securing-the-swarm-governance-attack-surfaces-and-zero-trust-architectures-in-multi-agent-ai-environments" target="_blank">Cloud Security Alliance</a> and has been cited independently &mdash; including by security researcher Asaf Nakash as "one of the few serious attempts to contain coordinated multi-agent systems." His broader agentic AI portfolio spans the <a href="https://github.com/sunilgentyala/gsh-framework" target="_blank"><strong>GSH Framework</strong></a> (Governed Security Hunting, threat hunting mapped to MITRE ATLAS and NIST CSF 2.0), <a href="https://sunilgentyala.github.io/TRACE-MAS/" target="_blank">TRACE-MAS</a> (cryptographically secured multi-agent LLM pipelines), <a href="https://github.com/sunilgentyala/argus" target="_blank">ARGUS</a> (autonomous LLM vulnerability discovery), <a href="https://sunilgentyala.github.io/PRAVAL/" target="_blank">PRAVAL</a> (agentic vulnerability assessment), and <a href="https://sunilgentyala.github.io/CausalNetTwin/" target="_blank">CausalNetTwin</a> (causal digital-twin reasoning for network security) &mdash; alongside scholarly work on agentic AI governance published in the <strong>ISACA Journal</strong> and analyzed in <a href="https://www.cio.com/article/4191250/shadow-agents-how-it-leaders-must-govern-headless-ai-before-it-breaks-the-enterprise.html" target="_blank">CIO.com</a>.
+      </p>
+      <p>
+        His post-quantum and quantum-adjacent security research addresses the migration problem enterprises are only beginning to confront. <a href="https://github.com/sunilgentyala/QuantumShieldEdge" target="_blank"><strong>QuantumShieldEdge</strong></a> is a hybrid QKD-integrated federated learning framework for secure consumer IoT at the network edge (target venue, IEEE CCNC 2027), demonstrating 85.2% accuracy under 20% Byzantine participation versus 71.4% for vanilla FedAvg. <a href="https://github.com/sunilgentyala/contextguard-mcp-pqc" target="_blank"><strong>ContextGuard-MCP-PQC</strong></a>, approved by IEEE ICSCSA 2026 and pending publication on IEEE Xplore once the conference concludes, applies RFC 9794's PQ/T hybrid terminology to Model Context Protocol across four security layers, hardening handshakes with hybrid ML-KEM/ML-DSA constructs against harvest-now-decrypt-later and downgrade attacks. His <a href="https://www.scworld.com/perspective/post-quantum-https-migration-faces-enterprise-browser-challenges" target="_blank">SC World analysis</a> of enterprise post-quantum HTTPS migration is paired with <a href="https://sunilgentyala.github.io/hrpq-gap-scan/" target="_blank">hrpq-gap-scan</a>, an open-source tool auditing HRPQ preload and cookie-scoping downgrade gaps. His research also extends into gate-based quantum computing itself: with Floriano Caprio, Matteo Tortora, and Paolo Soda, he co-authored a CIBB 2026 paper applying the Quantum Approximate Optimization Algorithm (QAOA) to clinical risk factor selection, executed on a 54-qubit superconducting quantum processor.
+      </p>
+      <p>
+        His research spans adversarial machine learning, MCP vulnerability analysis, post-quantum cryptography, and agentic AI governance. He holds over 20 years of enterprise PKI and security architecture experience and has published across <a href="https://www.csoonline.com/" target="_blank">CSO Online</a>, <a href="https://www.darkreading.com/" target="_blank">Dark Reading</a>, <a href="https://www.scworld.com/" target="_blank">SC World</a>, <a href="https://www.cyberdefensemagazine.com/" target="_blank">Cyber Defense Magazine</a>, and <a href="https://www.biometricupdate.com/" target="_blank">BiometricUpdate.com</a>. He holds a <strong>#FoundryExpert</strong> designation across IDG/Foundry publications (CSO Online, CIO.com, Computerworld) and has been featured on <a href="https://open.spotify.com/episode/1N0eLPJHXajFKWgpBynjGX" target="_blank"><em>Decoded: The Cybersecurity Podcast</em></a>.
+      </p>
+      <p>
+        He is an <strong>IEEE Senior Member</strong> (No. 101760715, ORCID: <a href="https://orcid.org/0009-0005-2642-3479" target="_blank">0009-0005-2642-3479</a>), active <strong>ISACA Professional Member</strong> (ID: 2297870), and is pursuing IET Fellowship (FIET).
+      </p>
+    </div>
+
+    <div class="focus-areas">
+      <span class="focus-label">RESEARCH FOCUS</span>
+      <div class="focus-chips">
+        <span class="focus-chip">Agentic AI Security</span>
+        <span class="focus-chip">Post-Quantum Cryptography</span>
+        <span class="focus-chip">Zero-Trust Architecture</span>
+        <span class="focus-chip">MCP Security</span>
+        <span class="focus-chip">Adversarial Machine Learning</span>
+        <span class="focus-chip">Quantum Key Distribution</span>
+        <span class="focus-chip">Quantum Optimization (QAOA)</span>
+        <span class="focus-chip">AI Governance</span>
+        <span class="focus-chip">Zero-Knowledge Proofs</span>
+      </div>
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat-tile">
+        <div class="stat-value">20+</div>
+        <div class="stat-label">Years of security experience</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-value">15</div>
+        <div class="stat-label">Research publications</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-value">7</div>
+        <div class="stat-label">Industry articles</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-value">11</div>
+        <div class="stat-label">Cross-media citations</div>
+      </div>
+    </div>
+
+    <h2 class="section-heading" id="projects"><span class="sh-icon">▣</span>Featured Research &amp; Projects</h2>
+
+    <div class="quantum-highlight">
+      <div class="quantum-highlight-label"><span class="sh-icon">⚛</span>Post-Quantum &amp; Quantum-Adjacent Security Research</div>
+      <div class="project-grid quantum-grid">
+
+        <a class="project-card" href="https://github.com/sunilgentyala/QuantumShieldEdge" target="_blank">
+          <div class="project-title">QuantumShieldEdge</div>
+          <div class="project-desc">Hybrid QKD-integrated federated learning for secure consumer IoT at the network edge. 85.2% accuracy under 20% Byzantine participation vs. 71.4% for vanilla FedAvg.</div>
+          <div class="pub-links"><span class="pub-tag">IEEE CCNC 2027 (target)</span><span class="pub-tag">QKD</span></div>
+        </a>
+
+        <a class="project-card" href="https://github.com/sunilgentyala/contextguard-mcp-pqc" target="_blank">
+          <div class="project-title">ContextGuard-MCP-PQC</div>
+          <div class="project-desc">Applies RFC 9794's PQ/T hybrid terminology to MCP across four security layers, hardening handshakes with hybrid ML-KEM/ML-DSA against harvest-now-decrypt-later and downgrade attacks.</div>
+          <div class="pub-links"><span class="pub-tag award">Approved &middot; IEEE ICSCSA 2026</span><span class="pub-tag">ML-KEM / ML-DSA</span></div>
+        </a>
+
+        <a class="project-card" href="https://sunilgentyala.github.io/hrpq-gap-scan/" target="_blank">
+          <div class="project-title">hrpq-gap-scan</div>
+          <div class="project-desc">Open-source CLI auditing HRPQ preload and cookie-scoping downgrade gaps in post-quantum HTTPS migrations. Companion to the SC World analysis.</div>
+          <div class="pub-links"><span class="pub-tag">SC World</span><span class="pub-tag">PQ HTTPS</span></div>
+        </a>
+
+        <a class="project-card" href="https://orcid.org/0009-0005-2642-3479" target="_blank">
+          <div class="project-title">Quantum-Assisted Clinical Risk Selection</div>
+          <div class="project-desc">QAOA/QUBO framework selecting compact, non-redundant clinical risk factors for diabetes readmission, executed on a 54-qubit superconducting QPU. With Floriano Caprio, Matteo Tortora, and Paolo Soda.</div>
+          <div class="pub-links"><span class="pub-tag award">CIBB 2026</span><span class="pub-tag">QAOA</span></div>
+        </a>
+
+      </div>
+      <div class="quantum-highlight-note">ContextGuard-MCP-PQC has cleared IEEE ICSCSA 2026 review and will be indexed on IEEE Xplore once the conference concludes (Aug 19&ndash;21, 2026). The CIBB 2026 paper applies gate-based quantum computing (QAOA) directly, distinct from the post-quantum cryptography work above.</div>
+    </div>
+
+    <div class="project-grid">
+
+      <a class="project-card" href="https://github.com/sunilgentyala/contextguard" target="_blank">
+        <div class="project-title">ContextGuard</div>
+        <div class="project-desc">Zero-trust middleware framework for Model Context Protocol (MCP) security.</div>
+        <div class="pub-links"><span class="pub-tag">MCP Security</span><span class="pub-tag">Zero Trust</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/gsh-framework/" target="_blank">
+        <div class="project-title">GSH Framework</div>
+        <div class="project-desc">Governed Security Hunting: agentic AI threat hunting mapped to MITRE ATLAS and NIST CSF 2.0.</div>
+        <div class="pub-links"><span class="pub-tag">Agentic AI</span><span class="pub-tag">Threat Hunting</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/AegisSwarm-Core/" target="_blank">
+        <div class="project-title">AegisSwarm-Core</div>
+        <div class="project-desc">Zero-trust governance for autonomous multi-agent AI networks. Published by the Cloud Security Alliance, cited externally as a reference implementation.</div>
+        <div class="pub-links"><span class="pub-tag award">CSA Published</span><span class="pub-tag">Multi-Agent Security</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/SybilShield-Core/" target="_blank">
+        <div class="project-title">SybilShield-Core</div>
+        <div class="project-desc">Composite trust scoring framework for Sybil attack mitigation in permissionless blockchain networks.</div>
+        <div class="pub-links"><span class="pub-tag award">IEEE Xplore</span><span class="pub-tag">Blockchain</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/cadlp/" target="_blank">
+        <div class="project-title">CADLP</div>
+        <div class="project-desc">Context-aware DLP proxy that detects and redacts credentials, PII, and proprietary code before prompts reach external LLM APIs.</div>
+        <div class="pub-links"><span class="pub-tag award">IEEE Xplore</span><span class="pub-tag">DLP</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/TRACE-MAS/" target="_blank">
+        <div class="project-title">TRACE-MAS</div>
+        <div class="project-desc">Unified cryptographic framework securing multi-agent LLM pipelines against drift, spoofing, and prompt injection.</div>
+        <div class="pub-links"><span class="pub-tag">IEEE ICSCSA 2026</span><span class="pub-tag">Multi-Agent</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/CausalNetTwin/" target="_blank">
+        <div class="project-title">CausalNetTwin</div>
+        <div class="project-desc">Causal digital-twin framework for network security reasoning, targeting IEEE INFOCOM 2027.</div>
+        <div class="pub-links"><span class="pub-tag">Digital Twin</span><span class="pub-tag">Causal Inference</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/PRAVAL/" target="_blank">
+        <div class="project-title">PRAVAL</div>
+        <div class="project-desc">Ten-phase agentic vulnerability-assessment framework, IEEE TrustCom 2026.</div>
+        <div class="pub-links"><span class="pub-tag">Agentic AI</span><span class="pub-tag">Vulnerability Assessment</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/ZKP-RA/" target="_blank">
+        <div class="project-title">ZKP-RA</div>
+        <div class="project-desc">Zero-knowledge proof reasoning anchors mitigating memory poisoning in autonomous agentic DeFi. Groth16 zk-SNARKs, ~182ms proofs.</div>
+        <div class="pub-links"><span class="pub-tag">Zero-Knowledge Proofs</span><span class="pub-tag">DeFi Security</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/archforge/" target="_blank">
+        <div class="project-title">ArchForge</div>
+        <div class="project-desc">Open-source system design workbench with 60+ interactive patterns and a real-time capacity calculator.</div>
+        <div class="pub-links"><span class="pub-tag">System Design</span><span class="pub-tag">Open Source</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/DockerDNA/" target="_blank">
+        <div class="project-title">DockerDNA</div>
+        <div class="project-desc">Layer-by-layer container security analysis — secrets detection, CIS Docker Benchmark compliance, SBOM, and SARIF output.</div>
+        <div class="pub-links"><span class="pub-tag">Container Security</span><span class="pub-tag">Supply Chain</span></div>
+      </a>
+
+      <a class="project-card" href="https://sunilgentyala.github.io/LaptopAI-Agent/" target="_blank">
+        <div class="project-title">LaptopAI-Agent</div>
+        <div class="project-desc">Fully local, privacy-first autonomous AI agent — LangGraph reasoning loop, Ollama, ChromaDB RAG, MCP tool integration.</div>
+        <div class="pub-links"><span class="pub-tag">Local AI</span><span class="pub-tag">Privacy</span></div>
+      </a>
+
+    </div>
+
+    <div style="margin-top:1.25rem; font-size:0.82rem; color:var(--muted);">
+      40+ open-source security and AI research projects in total &mdash; see the full list on <a href="https://github.com/sunilgentyala" target="_blank">GitHub</a>.
+    </div>
+
+    <h2 class="section-heading" id="timeline"><span class="sh-icon">◷</span>Timeline</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 August</div>
+        <div class="tl-body">
+          Published <a href="https://www.csoonline.com/article/4206750/4-million-fake-applications-and-one-blind-spot-a-soc-playbook-for-oauth-client-id-spoofing.html" target="_blank"><em>4 Million Fake Applications and One Blind Spot: A SOC Playbook for OAuth Client ID Spoofing</em></a> — CSO Online
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 May</div>
+        <div class="tl-body">
+          Published <a href="https://www.csoonline.com/article/4168979/1800-mcp-servers-exposed-without-authentication-how-zero-trust-can-secure-the-ai-agent-revolution.html" target="_blank"><em>1,800+ MCP Servers Exposed Without Authentication: How Zero Trust Can Secure the AI Agent Revolution</em></a> — CSO Online
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 May</div>
+        <div class="tl-body">
+          Quoted in <a href="https://www.biometricupdate.com/202605/non-stop-agentic-ai-action-has-teams-assembling-to-face-the-threat" target="_blank"><em>Non-Stop Agentic AI Action Has Teams Assembling to Face the Threat</em></a> — BiometricUpdate.com, on enterprise AI agent infrastructure security gaps
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 April</div>
+        <div class="tl-body">
+          <span class="tl-award">🥉 Bronze — Cybersecurity Professional of the Year</span> at the <a href="https://cybersecurity-excellence-awards.com/" target="_blank">2026 Cybersecurity Excellence Awards</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 April</div>
+        <div class="tl-body">
+          Shortlisted for <strong>Cyber Security Influencer of the Year</strong> at the <a href="https://cybersecurityawards.co.uk/" target="_blank">Cyber Security Awards 2026</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 April</div>
+        <div class="tl-body">
+          Nominated for the <strong>Alan Turing Cyber Leadership Award</strong> at the <a href="https://www.nationalcyberawards.co.uk/" target="_blank">National Cyber Awards</a> — under expert judging panel review
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 April</div>
+        <div class="tl-body">
+          Published MCP security analysis at <a href="https://www.scworld.com/" target="_blank">SC World</a> on Model Context Protocol attack vectors and zero-trust mitigations
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 April</div>
+        <div class="tl-body">
+          Submitted multi-venue paper package — <em>A Post-Quantum Migration Taxonomy for Model Context Protocol</em> — to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206" target="_blank">IEEE TIFS</a>, ACM QSec, and <a href="https://www.sciencedirect.com/journal/future-generation-computer-systems" target="_blank">Elsevier FGCS</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 March</div>
+        <div class="tl-body">
+          Expert commentary cited in <a href="https://www.darkreading.com/remote-workforce/zscaler-squarex-deal-boosts-zero-trust-secure-browsing-capabilities" target="_blank"><em>Zscaler-SquareX Deal Boosts Zero Trust, Secure Browsing Capabilities</em></a> — Dark Reading, on browser-centric zero-trust enforcement architecture
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 March</div>
+        <div class="tl-body">
+          CSA Peer Review completed — <em>MLOps Key Activities</em>, <a href="https://cloudsecurityalliance.org/" target="_blank">Cloud Security Alliance</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 March</div>
+        <div class="tl-body">
+          Published <a href="https://doi.org/10.5281/zenodo.19241166" target="_blank">LLM Jailbreak Survey</a> to Zenodo (DOI: 10.5281/zenodo.19241166) and SSRN
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 March</div>
+        <div class="tl-body">
+          <a href="https://github.com/sunilgentyala/gsh-framework" target="_blank">GSH Framework</a> reached v1.0.0-beta with full playbook set and CI workflow
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 February</div>
+        <div class="tl-body">
+          Published <a href="https://www.cyberdefensemagazine.com/the-sentinel-intelligence-a-cisos-guide-to-sovereign-security-in-the-age-of-agi/" target="_blank"><em>The Sentinel Intelligence: A CISO's Guide to Sovereign Security in the Age of AGI</em></a> — Cyber Defense Magazine, introducing the SI architectural framework
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 February</div>
+        <div class="tl-body">
+          Published <a href="https://www.csoonline.com/article/4132860/why-2025s-agentic-ai-boom-is-a-cisos-worst-nightmare.html" target="_blank"><em>Why 2025's Agentic AI Boom Is a CISO's Worst Nightmare</em></a> — CSO Online, on indirect prompt injection, memory poisoning, and agentic denial-of-service exploits
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 February</div>
+        <div class="tl-body">
+          CSA Peer Review completed — <em>IAM Standards and Protocols</em>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 February</div>
+        <div class="tl-body">
+          CSA Peer Review completed — <em>Post-Quantum Cryptography Key Management</em>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 February</div>
+        <div class="tl-body">
+          <a href="https://github.com/sunilgentyala/contextguard" target="_blank">ContextGuard</a> published at GitHub with v1.0.0-ieee-submission release tag
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 April</div>
+        <div class="tl-body">
+          Invited as peer reviewer at the <a href="https://cyberdefensereview.army.mil/" target="_blank"><strong>Cyber Defense Review</strong></a> — peer-reviewed scholarly journal of the U.S. Army Cyber Institute at West Point
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2026 January</div>
+        <div class="tl-body">
+          Submitted paper to <a href="https://ieeexplore.ieee.org/" target="_blank">IEEE SmartNets 2026</a> — <em>Identity 3.0 and Zero-Trust for Critical Infrastructure</em>, introducing the IMM-CI maturity model (EDAS ID 69662X)
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 December</div>
+        <div class="tl-body">
+          Featured on <a href="https://open.spotify.com/episode/1N0eLPJHXajFKWgpBynjGX" target="_blank"><em>Decoded: The Cybersecurity Podcast</em></a> — <em>Browser Zero Trust: Hardening Security Controls</em> (41 min); also on <a href="https://podcasts.apple.com/us/podcast/browser-zero-trust-hardening-security-controls/id1790909321?i=1000740296444" target="_blank">Apple Podcasts</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 December</div>
+        <div class="tl-body">
+          Published <a href="https://www.csoonline.com/article/4101173/hardening-browser-security-with-zero-trust-controls.html" target="_blank"><em>Hardening Browser Security with Zero-Trust Controls</em></a> — CSO Online, six-principle browser zero-trust framework with NIST SP 800-207 and CISA Maturity Model alignment
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 December</div>
+        <div class="tl-body">
+          Completed peer review for EJCSI-2026-03-024; registered on <a href="https://www.webofscience.com/" target="_blank">Web of Science / Publons</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 December</div>
+        <div class="tl-body">
+          Completed BCS Fellowship application (Experiential route)
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 November</div>
+        <div class="tl-body">
+          Published <a href="https://www.csoonline.com/article/4087578/beyond-silos-how-ddi-ai-integration-is-redefining-cyber-resilience.html" target="_blank"><em>Beyond Silos: How DDI-AI Integration Is Redefining Cyber Resilience</em></a> — CSO Online, on AI-driven predictive threat detection via DDI integration
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 November</div>
+        <div class="tl-body">
+          Submitted paper to <a href="https://ieeexplore.ieee.org/" target="_blank">IEEE QCE26</a> — <em>Post-Quantum Zero-Trust Migration Framework (QZTMF)</em>, co-author John Martin (HCLTech Auckland), QNET track
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 October</div>
+        <div class="tl-body">
+          ISACA Journal article — <em>Governing Agentic AI via MCP and COBIT 2019 / NIST CSF 2.0</em>, co-authored with Praveen Kumar Mannam (Salesforce)
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 September</div>
+        <div class="tl-body">
+          Zero-trust data pipelines paper submitted to <a href="https://jrtcse.com/" target="_blank">JRTCSE</a>, co-authored with Sunil Kumar Mudusu (Church Mutual Insurance)
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 August</div>
+        <div class="tl-body">
+          Elevated to <strong>IEEE Senior Member</strong> — No. 101760715
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-date">2025 July</div>
+        <div class="tl-body">
+          Appointed as HCLTech designated expert representative to the <a href="https://cloudsecurityalliance.org/" target="_blank">Cloud Security Alliance</a>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <h2 class="section-heading" id="publications"><span class="sh-icon">▤</span>Publications</h2>
+
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-title">A Multi-Stage NLP Framework for Enterprise Data Protection in Public LLM Interactions</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Nimmagari Tejasri, Sunil Kumar Mudusu</div>
+        <div class="pub-venue">IEEE ICIRCA 2026 &mdash; <a href="https://ieeexplore.ieee.org/abstract/document/11570292" target="_blank">IEEE Xplore</a></div>
+        <div class="pub-links">
+          <span class="pub-tag award">Published</span>
+          <span class="pub-tag">DLP</span>
+          <span class="pub-tag">LLM Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">SybilShield-Core: A Composite Trust Scoring Framework for Sybil Attack Mitigation in Permissionless Blockchain Networks</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, K Sanjeevaiah, Suresh Kumar Darisi</div>
+        <div class="pub-venue">IEEE ICICDS 2026, Paper ID ICICDS-690 &mdash; <a href="https://ieeexplore.ieee.org/document/11604799" target="_blank">IEEE Xplore</a></div>
+        <div class="pub-links">
+          <span class="pub-tag award">Published</span>
+          <span class="pub-tag">Blockchain</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">The Metamorphosis of Access: Strategic Imperatives for Identity 3.0 and Zero Trust Integration in Critical Infrastructure</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Floriano Caprio, Sunil Kumar Mudusu, Suresh Kumar Darisi, Satish Kumar Allani</div>
+        <div class="pub-venue">IEEE SmartNets 2026, EDAS #1571252869 &mdash; <a href="https://ieeexplore.ieee.org/document/11604842" target="_blank">IEEE Xplore</a></div>
+        <div class="pub-links">
+          <span class="pub-tag award">Published</span>
+          <span class="pub-tag">Zero Trust</span>
+          <span class="pub-tag">Critical Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">A Zero-Trust Supply Chain Security Framework for Model Context Protocol-Based AI Systems</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Ch. Srinivas, Raghu Dhumpati</div>
+        <div class="pub-venue">IEEE ICCBI 2026 &mdash; DOI: <a href="https://ieeexplore.ieee.org/document/11619741" target="_blank">10.1109/ICCBI68589.2026.11619741</a></div>
+        <div class="pub-links">
+          <span class="pub-tag award">Published</span>
+          <span class="pub-tag">MCP Security</span>
+          <span class="pub-tag">Supply Chain</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">A Post-Quantum Security Framework for Model Context Protocol Using ContextGuard</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, P. Krishna Sunil, Vamshi Lande, Akhila Kasturi, Suresh Kumar Darisi, Ruhisulthana Shaik</div>
+        <div class="pub-venue">IEEE ICSCSA 2026, Paper ICSCSA-011 &mdash; approved, to be indexed on IEEE Xplore once the conference concludes (Aug 19&ndash;21, 2026)</div>
+        <div class="pub-links">
+          <span class="pub-tag award">Approved</span>
+          <span class="pub-tag">Post-Quantum</span>
+          <span class="pub-tag">MCP Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Quantum-Assisted Clinical Risk Factor Selection for Diabetes Readmission Prediction</div>
+        <div class="pub-authors">Floriano Caprio, Matteo Tortora, Paolo Soda, <span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CIBB 2026 &mdash; Quantum Artificial Intelligence for Bioinformatics and Biostatistics track</div>
+        <div class="pub-links">
+          <span class="pub-tag award">Accepted</span>
+          <span class="pub-tag">QAOA</span>
+          <span class="pub-tag">Quantum Computing</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">A Unified Mathematical Framework for Secure Multi-Agent Large Language Model Pipelines (TRACE-MAS)</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Y. Geetha Reddy, Manasa Pendyala, Vishnu Gatla, Sundarigari Manoj, Ruhisulthana Shaik</div>
+        <div class="pub-venue">IEEE ICSCSA 2026, Paper ICSCSA-168 &mdash; accepted, conference Aug 19&ndash;21, 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">Multi-Agent</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">ARGUS: An Agentic Security Validation Framework for Retrieval-Augmented and Tool-Enabled Large Language Model Systems</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, N. Sudhakar Reddy, Pathapati Saroja, Kammara Venkatarangaiah Achari, Kothapalli Chaitanya Deepthi, Ruhisulthana Shaik</div>
+        <div class="pub-venue">IEEE ICCVBIC 2026, Paper ICCVBIC-383 &mdash; accepted, conference Aug 19, 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">LLM Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">CyberFuse-CI: Adversarially Resilient Vulnerability Detection Through Heterogeneous Multi-Source Data Fusion and LLM-Augmented Reasoning</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Sunil Kumar Mudusu, Praveen Kumar Mannam</div>
+        <div class="pub-venue">IEEE ICETCI 2026, EDAS #1571273793 &mdash; accepted, conference Aug 19&ndash;22, 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">Vulnerability Detection</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Governing Heterogeneous API Gateway Estates Through Policy-as-Code: An Engineering Management Perspective</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Floriano Caprio, Praveen Kumar Mannam, Angajala Tejaswi, Rakesh Prakash, Akhila Kasturi</div>
+        <div class="pub-venue">IEEE TEMSCON GLOBAL 2026, EDAS #145 (1571270844)</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">API Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">AdaptFlow: A Self-Optimizing AI-Driven Data Pipeline Architecture for Real-Time Inference at Scale</div>
+        <div class="pub-authors">Sunil Kumar Mudusu, Sreepal Reddy Bolla, <span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">IEEE ICETM 2026, Paper ID 225</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">Data Pipelines</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Temporal Probabilistic Modeling with Uncertainty-Aware LSTM Networks for Self-Aware Fault Detection and Prognostics in Autonomous Aerospace Systems</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Soujanya Jagadeesh, Rakesh Prakash</div>
+        <div class="pub-venue">IEEE MetroAeroSpace 2026, EDAS #81 (1571263908)</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">Aerospace</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Adaptive Neural Control for Multi-UAV Swarm Coordination: Trajectory Tracking, Collision Avoidance, and Wind Disturbance Rejection</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Soujanya Jagadeesh, Rakesh Prakash</div>
+        <div class="pub-venue">IEEE MetroAeroSpace 2026, EDAS #82 (1571263910)</div>
+        <div class="pub-links">
+          <span class="pub-tag">Accepted</span>
+          <span class="pub-tag">Aerospace</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">Zero-Trust Data Pipelines for AI Systems: A Framework for Secure, Verifiable, and Auditable Data Engineering</div>
+        <div class="pub-authors">Sunil Kumar Mudusu, <span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">JRTCSE, Vol. 14, No. 2, pp. 10&ndash;25 (Mar&ndash;Apr 2026) &mdash; DOI: <a href="https://doi.org/10.70589/JRTCSE.2026.14.2.2" target="_blank">10.70589/JRTCSE.2026.14.2.2</a></div>
+        <div class="pub-links">
+          <span class="pub-tag award">Published</span>
+          <span class="pub-tag">Zero Trust</span>
+          <span class="pub-tag">Data Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">On Auditing MCP Deployments</div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Praveen Kumar Mannam</div>
+        <div class="pub-venue">ISACA Journal &mdash; in editorial review, 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Under Review</span>
+          <span class="pub-tag">AI Governance</span>
+          <span class="pub-tag">MCP Security</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:1.25rem; font-size:0.82rem; color:var(--muted);">
+13 conference papers accepted in 2026 (4 published on IEEE Xplore), plus journal work. See <a href="https://ieeexplore.ieee.org/author/445793536496057" target="_blank">IEEE Xplore author profile</a> and <a href="https://orcid.org/0009-0005-2642-3479" target="_blank">ORCID</a> for the complete record.
+    </div>
+
+    <div style="margin-top:1.75rem; font-size:0.82rem; color:var(--muted);">
+      See all publications on <a href="https://doi.org/10.5281/zenodo.19241166" target="_blank">Zenodo</a>, <a href="https://orcid.org/0009-0005-2642-3479" target="_blank">ORCID</a>, and the <a href="https://ieeexplore.ieee.org/author/445793536496057" target="_blank">IEEE Xplore author profile</a>.
+    </div>
+
+    <h2 class="section-heading"><span class="sh-icon">✎</span>Industry Articles</h2>
+
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4206750/4-million-fake-applications-and-one-blind-spot-a-soc-playbook-for-oauth-client-id-spoofing.html" target="_blank">4 Million Fake Applications and One Blind Spot: A SOC Playbook for OAuth Client ID Spoofing</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CSO Online, August 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Identity Security</span>
+          <span class="pub-tag">SOC Detection</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4168979/1800-mcp-servers-exposed-without-authentication-how-zero-trust-can-secure-the-ai-agent-revolution.html" target="_blank">1,800+ MCP Servers Exposed Without Authentication: How Zero Trust Can Secure the AI Agent Revolution</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CSO Online, May 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">MCP Security</span>
+          <span class="pub-tag">Zero Trust</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.scworld.com/perspective/mcp-is-the-backdoor-your-zero-trust-architecture-forgot-to-close/" target="_blank">MCP is the Backdoor Your Zero-Trust Architecture Forgot to Close</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">SC World, March 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">MCP Security</span>
+          <span class="pub-tag">Zero Trust</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.cyberdefensemagazine.com/the-sentinel-intelligence-a-cisos-guide-to-sovereign-security-in-the-age-of-agi/" target="_blank">The Sentinel Intelligence: A CISO's Guide to Sovereign Security in the Age of AGI</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">Cyber Defense Magazine, February 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Agentic AI</span>
+          <span class="pub-tag">CISO Strategy</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4132860/why-2025s-agentic-ai-boom-is-a-cisos-worst-nightmare.html" target="_blank">Why 2025's Agentic AI Boom Is a CISO's Worst Nightmare</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CSO Online, February 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Agentic AI</span>
+          <span class="pub-tag">Prompt Injection</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4101173/hardening-browser-security-with-zero-trust-controls.html" target="_blank">Hardening Browser Security with Zero-Trust Controls</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CSO Online, December 2025</div>
+        <div class="pub-links">
+          <span class="pub-tag">Browser Security</span>
+          <span class="pub-tag">Zero Trust</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4087578/beyond-silos-how-ddi-ai-integration-is-redefining-cyber-resilience.html" target="_blank">Beyond Silos: How DDI-AI Integration Is Redefining Cyber Resilience</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CSO Online, November 2025</div>
+        <div class="pub-links">
+          <span class="pub-tag">DDI</span>
+          <span class="pub-tag">AI Security</span>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="section-heading" id="media"><span class="sh-icon">🎙</span>Media Coverage &amp; Podcast Features</h2>
+
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.darkreading.com/remote-workforce/zscaler-squarex-deal-boosts-zero-trust-secure-browsing-capabilities" target="_blank">Zscaler-SquareX Deal Boosts Zero Trust, Secure Browsing Capabilities</a></div>
+        <div class="pub-venue"><em>Dark Reading</em> &mdash; expert commentary on browser-centric zero-trust enforcement architecture</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">Browser Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.biometricupdate.com/202605/non-stop-agentic-ai-action-has-teams-assembling-to-face-the-threat" target="_blank">Non-Stop Agentic AI Action Has Teams Assembling to Face the Threat</a></div>
+        <div class="pub-venue"><em>BiometricUpdate.com</em>, May 2026 &mdash; quoted on enterprise AI agent infrastructure security gaps and deployment risks</div>
+        <div class="pub-links">
+          <span class="pub-tag">Quoted</span>
+          <span class="pub-tag">Agentic AI</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://open.spotify.com/episode/1N0eLPJHXajFKWgpBynjGX" target="_blank">Browser Zero Trust: Hardening Security Controls</a></div>
+        <div class="pub-venue"><em>Decoded: The Cybersecurity Podcast</em>, December 2025 (41 min) &mdash; full episode based on CSO Online article &bull; <a href="https://podcasts.apple.com/us/podcast/browser-zero-trust-hardening-security-controls/id1790909321?i=1000740296444" target="_blank">Apple Podcasts</a></div>
+        <div class="pub-links">
+          <span class="pub-tag">Podcast Feature</span>
+          <span class="pub-tag">Zero Trust</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.linkedin.com/pulse/ai-agent-held-database-ransom-key-never-saved-paying-wouldnt-nakash-vqkpf/" target="_blank">AI Agent Held a Database for Ransom, Key Never Saved, and Paying Wouldn't Have Helped</a></div>
+        <div class="pub-venue">LinkedIn, Asaf Nakash &mdash; names <a href="https://github.com/sunilgentyala/AegisSwarm-Core" target="_blank">AegisSwarm-Core</a> directly as "one of the few serious attempts to contain coordinated multi-agent systems" &bull; companion <a href="https://open.spotify.com/episode/1PpMTGsBxmBY4TRhpCIDJz" target="_blank">Spotify episode</a> on <em>Context Window: AI Security Podcast</em></div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">Multi-Agent Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://agentic-threat-tracker.com/incident/f34fe4ee00098a12515c82d359c09b4f0458a30b" target="_blank">Zero-Trust AI Governance for Multi-Agent Systems</a></div>
+        <div class="pub-venue">Agentic Threat Tracker, 24 July 2026 &mdash; incident-tracker entry on the CSA "Securing the Swarm" analysis, names <a href="https://github.com/sunilgentyala/AegisSwarm-Core" target="_blank">AegisSwarm-Core</a> directly ("introduces AegisSwarm, a proposed open-source reference implementation for zero-trust multi-agent security")</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">Multi-Agent Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.linkedin.com/pulse/signal-mariano-mattei-1lnfe/" target="_blank">THE SIGNAL &mdash; Mattei Systems Intelligence Brief</a></div>
+        <div class="pub-venue">LinkedIn newsletter, Mariano Mattei (Founder &amp; Principal AI Architect, Mattei Systems), August 2026 &mdash; Executive Insight and Recommended Action sections built around the CSO Online OAuth client ID spoofing article</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">OAuth Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.linkedin.com/posts/sarang-pokhare-digital-marketing-iim-calcutta-alumni_4-million-fake-applications-and-one-blind-activity-7492564676770344960-euib/" target="_blank">LinkedIn share &mdash; Sarang Pokhare</a></div>
+        <div class="pub-venue">IIM Calcutta alumnus &mdash; shares the CSO Online OAuth client ID spoofing article, reproducing its Figure 1 attack-and-detection workflow with attribution</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">OAuth Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://newestek.com/?p=16586" target="_blank">NewesTek Brief</a></div>
+        <div class="pub-venue">NewesTek, August 2026 &mdash; republishes the CSO Online OAuth client ID spoofing article's Figure 1 attack-and-detection workflow with attribution</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">OAuth Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.worldprogramming.org/posts/4-million-fake-applications-and-one-blind-spot-a-soc-playbook-for-oauth-client-id-spoofing-nwkpoq" target="_blank">World Programming Society Repost</a></div>
+        <div class="pub-venue">DevOps channel &mdash; links back to the CSO Online OAuth client ID spoofing article as the original source</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">OAuth Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.hazetec.com/briefs/20260810-4-million-fake-applications-and-one-blind-spot-a-soc-playbook-for-oauth-client.html" target="_blank">HazeTec Brief</a></div>
+        <div class="pub-venue">HazeTec, August 2026 &mdash; summarizes the CSO Online OAuth client ID spoofing article, linking back to the original</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">OAuth Security</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.threads.com/@mcheung63/post/Db5QWl7k5TA/million-fake-applications-and-one-blind-spot-a-soc-playbook-for-o-auth-client/" target="_blank">Threads share &mdash; @mcheung63</a></div>
+        <div class="pub-venue">Threads &mdash; shares the CSO Online OAuth client ID spoofing article</div>
+        <div class="pub-links">
+          <span class="pub-tag">Cited</span>
+          <span class="pub-tag">OAuth Security</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  &copy; 2026 Sunil Gentyala &bull; Dallas, TX &bull;
+  <a href="https://github.com/sunilgentyala">github.com/sunilgentyala</a>
+</footer>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const icon = document.getElementById('theme-icon');
+    const btn = document.querySelector('.theme-toggle');
+    if (html.getAttribute('data-theme') === 'light') {
+      html.setAttribute('data-theme', 'dark');
+      icon.textContent = '☀';
+    } else {
+      html.setAttribute('data-theme', 'light');
+      icon.textContent = '☾';
+    }
+    btn.classList.remove('spinning');
+    void btn.offsetWidth;
+    btn.classList.add('spinning');
+  }
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('theme-icon').textContent = '☀';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sunilgentyala.com/sitemap.xml
