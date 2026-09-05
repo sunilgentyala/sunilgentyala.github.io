@@ -637,7 +637,7 @@
     <div class="topnav-actions">
       <a class="topnav-contact" href="mailto:sunil.gentyala@ieee.org">Contact</a>
       <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">
-        <span id="theme-icon">☾</span>
+        <span id="theme-icon">🌙</span>
       </button>
     </div>
   </div>
@@ -1682,10 +1682,10 @@
     const btn = document.querySelector('.theme-toggle');
     if (html.getAttribute('data-theme') === 'light') {
       html.setAttribute('data-theme', 'dark');
-      icon.textContent = '☀';
+      icon.textContent = '☀️';
     } else {
       html.setAttribute('data-theme', 'light');
-      icon.textContent = '☾';
+      icon.textContent = '🌙';
     }
     btn.classList.remove('spinning');
     void btn.offsetWidth;
@@ -1693,7 +1693,7 @@
   }
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.documentElement.setAttribute('data-theme', 'dark');
-    document.getElementById('theme-icon').textContent = '☀';
+    document.getElementById('theme-icon').textContent = '☀️';
   }
 </script>
 
