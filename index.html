@@ -482,6 +482,20 @@
   .pub-tag.award { background: #fff8df; color: #946e00; }
   [data-theme="dark"] .pub-tag.award { background: #382a00; color: #f0c040; }
 
+  .pub-group-heading {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 1.6rem 0 0.5rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .pub-group-heading:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
   .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1126,6 +1140,8 @@
 
     <div class="pub-list">
 
+      <div class="pub-group-heading">IEEE Xplore</div>
+
       <div class="pub-item">
         <div class="pub-title">A Multi-Stage NLP Framework for Enterprise Data Protection in Public LLM Interactions</div>
         <div class="pub-authors"><span class="me">Sunil Gentyala</span>, Nimmagari Tejasri, Sunil Kumar Mudusu</div>
@@ -1177,17 +1193,6 @@
           <span class="pub-tag award">Approved</span>
           <span class="pub-tag">Post-Quantum</span>
           <span class="pub-tag">MCP Security</span>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">Quantum-Assisted Clinical Risk Factor Selection for Diabetes Readmission Prediction</div>
-        <div class="pub-authors">Floriano Caprio, Matteo Tortora, Paolo Soda, <span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">CIBB 2026 &mdash; Quantum Artificial Intelligence for Bioinformatics and Biostatistics track</div>
-        <div class="pub-links">
-          <span class="pub-tag award">Accepted</span>
-          <span class="pub-tag">QAOA</span>
-          <span class="pub-tag">Quantum Computing</span>
         </div>
       </div>
 
@@ -1261,6 +1266,19 @@
         </div>
       </div>
 
+      <div class="pub-group-heading">Other Peer-Reviewed Venues</div>
+
+      <div class="pub-item">
+        <div class="pub-title">Quantum-Assisted Clinical Risk Factor Selection for Diabetes Readmission Prediction</div>
+        <div class="pub-authors">Floriano Caprio, Matteo Tortora, Paolo Soda, <span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CIBB 2026 &mdash; Quantum Artificial Intelligence for Bioinformatics and Biostatistics track</div>
+        <div class="pub-links">
+          <span class="pub-tag award">Accepted</span>
+          <span class="pub-tag">QAOA</span>
+          <span class="pub-tag">Quantum Computing</span>
+        </div>
+      </div>
+
       <div class="pub-item">
         <div class="pub-title">Zero-Trust Data Pipelines for AI Systems: A Framework for Secure, Verifiable, and Auditable Data Engineering</div>
         <div class="pub-authors">Sunil Kumar Mudusu, <span class="me">Sunil Gentyala</span></div>
@@ -1297,20 +1315,12 @@
 
     <div class="pub-list">
 
+      <div class="pub-group-heading">CSO Online</div>
+
       <div class="pub-item">
         <div class="pub-title"><a href="https://www.csoonline.com/article/4206750/4-million-fake-applications-and-one-blind-spot-a-soc-playbook-for-oauth-client-id-spoofing.html" target="_blank">4 Million Fake Applications and One Blind Spot: A SOC Playbook for OAuth Client ID Spoofing</a></div>
         <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
         <div class="pub-venue">CSO Online, August 2026</div>
-        <div class="pub-links">
-          <span class="pub-tag">Identity Security</span>
-          <span class="pub-tag">SOC Detection</span>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title"><a href="https://cloudsecurityalliance.org/blog/2026/08/19/the-ghost-applications-how-oauth-client-id-spoofing-enumerates-microsoft-entra-accounts-without-a-successful-sign-in" target="_blank">The Ghost Applications: How OAuth Client ID Spoofing Enumerates Microsoft Entra Accounts Without a Successful Sign-In</a></div>
-        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">Cloud Security Alliance, August 2026 &mdash; companion to the CSO Online article above</div>
         <div class="pub-links">
           <span class="pub-tag">Identity Security</span>
           <span class="pub-tag">SOC Detection</span>
@@ -1328,21 +1338,53 @@
       </div>
 
       <div class="pub-item">
-        <div class="pub-title"><a href="https://cloudsecurityalliance.org/blog/2026/04/06/post-quantum-cryptographic-migration-for-cloud-native-zero-trust-architectures-what-csa-members-need-to-deploy-now" target="_blank">Post-Quantum Cryptographic Migration for Cloud-Native Zero-Trust Architectures: What CSA Members Need to Deploy Now</a></div>
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4132860/why-2025s-agentic-ai-boom-is-a-cisos-worst-nightmare.html" target="_blank">Why 2025's Agentic AI Boom Is a CISO's Worst Nightmare</a></div>
         <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">Cloud Security Alliance, April 2026</div>
+        <div class="pub-venue">CSO Online, February 2026</div>
         <div class="pub-links">
-          <span class="pub-tag">Post-Quantum Cryptography</span>
+          <span class="pub-tag">Agentic AI</span>
+          <span class="pub-tag">Prompt Injection</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4101173/hardening-browser-security-with-zero-trust-controls.html" target="_blank">Hardening Browser Security with Zero-Trust Controls</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">CSO Online, December 2025</div>
+        <div class="pub-links">
+          <span class="pub-tag">Browser Security</span>
           <span class="pub-tag">Zero Trust</span>
         </div>
       </div>
 
       <div class="pub-item">
-        <div class="pub-title"><a href="https://www.scworld.com/perspective/mcp-is-the-backdoor-your-zero-trust-architecture-forgot-to-close/" target="_blank">MCP is the Backdoor Your Zero-Trust Architecture Forgot to Close</a></div>
+        <div class="pub-title"><a href="https://www.csoonline.com/article/4087578/beyond-silos-how-ddi-ai-integration-is-redefining-cyber-resilience.html" target="_blank">Beyond Silos: How DDI-AI Integration Is Redefining Cyber Resilience</a></div>
         <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">SC World, March 2026</div>
+        <div class="pub-venue">CSO Online, November 2025</div>
         <div class="pub-links">
-          <span class="pub-tag">MCP Security</span>
+          <span class="pub-tag">DDI</span>
+          <span class="pub-tag">AI Security</span>
+        </div>
+      </div>
+
+      <div class="pub-group-heading">Cloud Security Alliance</div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://cloudsecurityalliance.org/blog/2026/08/19/the-ghost-applications-how-oauth-client-id-spoofing-enumerates-microsoft-entra-accounts-without-a-successful-sign-in" target="_blank">The Ghost Applications: How OAuth Client ID Spoofing Enumerates Microsoft Entra Accounts Without a Successful Sign-In</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">Cloud Security Alliance, August 2026 &mdash; companion to the CSO Online article above</div>
+        <div class="pub-links">
+          <span class="pub-tag">Identity Security</span>
+          <span class="pub-tag">SOC Detection</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://cloudsecurityalliance.org/blog/2026/04/06/post-quantum-cryptographic-migration-for-cloud-native-zero-trust-architectures-what-csa-members-need-to-deploy-now" target="_blank">Post-Quantum Cryptographic Migration for Cloud-Native Zero-Trust Architectures: What CSA Members Need to Deploy Now</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">Cloud Security Alliance, April 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Post-Quantum Cryptography</span>
           <span class="pub-tag">Zero Trust</span>
         </div>
       </div>
@@ -1358,39 +1400,9 @@
       </div>
 
       <div class="pub-item">
-        <div class="pub-title"><a href="https://www.cyberdefensemagazine.com/the-sentinel-intelligence-a-cisos-guide-to-sovereign-security-in-the-age-of-agi/" target="_blank">The Sentinel Intelligence: A CISO's Guide to Sovereign Security in the Age of AGI</a></div>
-        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">Cyber Defense Magazine, February 2026</div>
-        <div class="pub-links">
-          <span class="pub-tag">Agentic AI</span>
-          <span class="pub-tag">CISO Strategy</span>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title"><a href="https://www.csoonline.com/article/4132860/why-2025s-agentic-ai-boom-is-a-cisos-worst-nightmare.html" target="_blank">Why 2025's Agentic AI Boom Is a CISO's Worst Nightmare</a></div>
-        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">CSO Online, February 2026</div>
-        <div class="pub-links">
-          <span class="pub-tag">Agentic AI</span>
-          <span class="pub-tag">Prompt Injection</span>
-        </div>
-      </div>
-
-      <div class="pub-item">
         <div class="pub-title"><a href="https://cloudsecurityalliance.org/blog/2026/01/14/reimagining-the-browser-as-a-critical-policy-enforcement-point-a-zero-trust-security-architecture-for-modern-enterprises" target="_blank">Reimagining the Browser as a Critical Policy Enforcement Point: A Zero-Trust Security Architecture for Modern Enterprises</a></div>
         <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
         <div class="pub-venue">Cloud Security Alliance, January 2026</div>
-        <div class="pub-links">
-          <span class="pub-tag">Browser Security</span>
-          <span class="pub-tag">Zero Trust</span>
-        </div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title"><a href="https://www.csoonline.com/article/4101173/hardening-browser-security-with-zero-trust-controls.html" target="_blank">Hardening Browser Security with Zero-Trust Controls</a></div>
-        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">CSO Online, December 2025</div>
         <div class="pub-links">
           <span class="pub-tag">Browser Security</span>
           <span class="pub-tag">Zero Trust</span>
@@ -1408,22 +1420,36 @@
       </div>
 
       <div class="pub-item">
-        <div class="pub-title"><a href="https://www.csoonline.com/article/4087578/beyond-silos-how-ddi-ai-integration-is-redefining-cyber-resilience.html" target="_blank">Beyond Silos: How DDI-AI Integration Is Redefining Cyber Resilience</a></div>
-        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
-        <div class="pub-venue">CSO Online, November 2025</div>
-        <div class="pub-links">
-          <span class="pub-tag">DDI</span>
-          <span class="pub-tag">AI Security</span>
-        </div>
-      </div>
-
-      <div class="pub-item">
         <div class="pub-title"><a href="https://cloudsecurityalliance.org/blog/2025/11/21/securing-application-to-application-traffic-with-ai-agi-ml-powered-virtual-firewalls-a-comprehensive-framework-for-multi-cloud-hybrid-and-on-premises-environments" target="_blank">Securing Application-to-Application Traffic with AI/AGI/ML-Powered Virtual Firewalls: A Comprehensive Framework for Multi-Cloud, Hybrid, and On-Premises Environments</a></div>
         <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
         <div class="pub-venue">Cloud Security Alliance, November 2025</div>
         <div class="pub-links">
           <span class="pub-tag">AI Security</span>
           <span class="pub-tag">Multi-Cloud</span>
+        </div>
+      </div>
+
+      <div class="pub-group-heading">Cyber Defense Magazine</div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.cyberdefensemagazine.com/the-sentinel-intelligence-a-cisos-guide-to-sovereign-security-in-the-age-of-agi/" target="_blank">The Sentinel Intelligence: A CISO's Guide to Sovereign Security in the Age of AGI</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">Cyber Defense Magazine, February 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">Agentic AI</span>
+          <span class="pub-tag">CISO Strategy</span>
+        </div>
+      </div>
+
+      <div class="pub-group-heading">SC World</div>
+
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://www.scworld.com/perspective/mcp-is-the-backdoor-your-zero-trust-architecture-forgot-to-close/" target="_blank">MCP is the Backdoor Your Zero-Trust Architecture Forgot to Close</a></div>
+        <div class="pub-authors"><span class="me">Sunil Gentyala</span></div>
+        <div class="pub-venue">SC World, March 2026</div>
+        <div class="pub-links">
+          <span class="pub-tag">MCP Security</span>
+          <span class="pub-tag">Zero Trust</span>
         </div>
       </div>
 
