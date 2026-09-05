@@ -123,6 +123,9 @@
   }
 
   .topnav-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     color: var(--muted);
     font-size: 0.85rem;
     font-weight: 500;
@@ -130,6 +133,12 @@
   }
 
   .topnav-links a:hover { color: var(--accent); text-decoration: none; }
+
+  .nav-icon {
+    color: var(--accent);
+    font-size: 0.85rem;
+    line-height: 1;
+  }
 
   .topnav-actions {
     display: flex;
@@ -628,11 +637,11 @@
       <span class="topnav-name">Sunil Gentyala</span>
     </a>
     <nav class="topnav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#media">Media</a>
+      <a href="#about"><span class="nav-icon">👤</span>About</a>
+      <a href="#projects"><span class="nav-icon">▣</span>Projects</a>
+      <a href="#publications"><span class="nav-icon">▤</span>Publications</a>
+      <a href="#timeline"><span class="nav-icon">◷</span>Timeline</a>
+      <a href="#media"><span class="nav-icon">🎙</span>Media</a>
     </nav>
     <div class="topnav-actions">
       <a class="topnav-contact" href="mailto:sunil.gentyala@ieee.org">Contact</a>
@@ -725,6 +734,7 @@
       <span class="focus-label">RESEARCH FOCUS</span>
       <div class="focus-chips">
         <span class="focus-chip">Agentic AI Security</span>
+        <span class="focus-chip">Offensive &amp; Defensive AI Security</span>
         <span class="focus-chip">Post-Quantum Cryptography</span>
         <span class="focus-chip">Zero-Trust Architecture</span>
         <span class="focus-chip">MCP Security</span>
