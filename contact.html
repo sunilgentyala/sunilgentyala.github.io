@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Sunil Gentyala</title><meta name="description" content="Contact Sunil Gentyala for research collaboration, speaking, peer review or press.">
+<link rel="canonical" href="https://sunilgentyala.com/contact.html">
+<meta property="og:title" content="Contact | Sunil Gentyala"><meta property="og:description" content="Contact Sunil Gentyala for research collaboration, speaking, peer review or press."><meta property="og:type" content="website"><meta property="og:url" content="https://sunilgentyala.com/contact.html"><meta property="og:image" content="https://sunilgentyala.com/assets/profile.jpg">
+<link rel="icon" href="assets/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Sunil Gentyala</a>
+<nav aria-label="Primary"><ul><li><a href="research.html">Research</a></li><li><a href="writing.html">Writing</a></li><li><a href="media.html">Media</a></li><li><a href="projects.html">Projects</a></li><li><a href="service.html">Peer review</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><button id="theme" class="theme" aria-label="Toggle dark mode">Theme</button></li></ul></nav></div></header>
+<main id="main"><section class="page-head"><div class="wrap"><h1>Contact</h1><p>Research collaboration, speaking and briefings, peer review invitations, press questions.</p></div></section>
+<div class="wrap cols"><form id="cf" class="prose" onsubmit="return false">
+<p><label>Your name<br><input id="n" required style="width:100%;padding:10px;font:inherit"></label></p>
+<p><label>Your email<br><input id="m" type="email" required style="width:100%;padding:10px;font:inherit"></label></p>
+<p><label>Topic<br><select id="t" style="width:100%;padding:10px;font:inherit"><option>Research collaboration</option><option>Speaking or briefing</option><option>Peer review or editorial</option><option>Press question</option><option>Other</option></select></label></p>
+<p><label>Message<br><textarea id="b" rows="6" required style="width:100%;padding:10px;font:inherit"></textarea></label></p>
+<p><button class="btn" id="send" type="button">Open in your email app</button></p>
+<p class="meta">This is a static site with no server, so the button opens a pre-filled message in your own email client.</p></form>
+<aside class="prose"><h2>Direct</h2><p><a href="mailto:sunil.gentyala@ieee.org">sunil.gentyala@ieee.org</a></p><p>Dallas, Texas, United States</p></aside></div>
+<script>document.getElementById('send').onclick=function(){var f=document.getElementById('cf');if(!f.reportValidity())return;var s=encodeURIComponent('['+document.getElementById('t').value+'] from '+document.getElementById('n').value);var b=encodeURIComponent(document.getElementById('b').value+'\n\n'+document.getElementById('n').value+' <'+document.getElementById('m').value+'>');location.href='mailto:sunil.gentyala@ieee.org?subject='+s+'&body='+b}</script></main>
+<footer class="site"><div class="wrap"><span>&copy; 2026 Sunil Gentyala. Independent research. Views are my own.</span>
+<span><a href="https://github.com/sunilgentyala" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/sunil-gentyala/" rel="noopener">LinkedIn</a> &middot; <a href="https://orcid.org/0009-0005-2642-3479" rel="noopener">ORCID</a> &middot; <a href="https://ieeexplore.ieee.org/author/445793536496057" rel="noopener">IEEE Xplore</a></span></div></footer>
+<script src="assets/site.js"></script></body></html>

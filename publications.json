@@ -1,0 +1,213 @@
+[
+ {
+  "title": "A Post-Quantum Security Framework for Model Context Protocol Using ContextGuard",
+  "authors": [
+   "Sunil Gentyala",
+   "P. Krishna Sunil",
+   "Vamshi Lande",
+   "Akhila Kasturi",
+   "Suresh Kumar Darisi",
+   "Ruhisulthana Shaik"
+  ],
+  "venue": "IEEE ICSCSA 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11708388",
+  "doi": "10.1109/ICSCSA69367.2026.11708388"
+ },
+ {
+  "title": "Agentic Security Validation Framework for Retrieval-Augmented and Tool-Enabled Large Language Model Systems (ARGUS)",
+  "authors": [
+   "Sunil Gentyala",
+   "N. Sudhakar Reddy",
+   "Kothapalli Chaitanya Deepthi",
+   "Pathapati Saroja",
+   "Kammara Venkatarangaiah Achari",
+   "Ruhisulthana Shaik"
+  ],
+  "venue": "IEEE ICCVBIC 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11689544",
+  "doi": "10.1109/ICCVBIC71195.2026.11689544"
+ },
+ {
+  "title": "A Zero-Trust Supply Chain Security Framework for Model Context Protocol-Based AI Systems",
+  "authors": [
+   "Sunil Gentyala",
+   "Ch. Srinivas",
+   "Raghu Dhumpati"
+  ],
+  "venue": "IEEE ICCBI 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11619741",
+  "doi": "10.1109/ICCBI68589.2026.11619741"
+ },
+ {
+  "title": "A Unified Mathematical Framework for Secure Multi-Agent Large Language Model Pipelines (TRACE-MAS)",
+  "authors": [
+   "Sunil Gentyala",
+   "Y. Geetha Reddy",
+   "Manasa Pendyala",
+   "Vishnu Gatla",
+   "Sundarigari Manoj",
+   "Ruhisulthana Shaik"
+  ],
+  "venue": "IEEE ICSCSA 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11708210",
+  "doi": "10.1109/ICSCSA69367.2026.11708210"
+ },
+ {
+  "title": "CyberFuse-CI: Adversarially Resilient Vulnerability Detection Through Heterogeneous Multi-Source Data Fusion and LLM-Augmented Reasoning",
+  "authors": [
+   "Sunil Gentyala",
+   "Sunil Kumar Mudusu",
+   "Satish Kumar Allani",
+   "Manasa Pendyala",
+   "Rakesh Prakash",
+   "Praveen Kumar Mannam"
+  ],
+  "venue": "IEEE ICETCI 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11710523",
+  "doi": "10.1109/ICETCI71772.2026.11710523"
+ },
+ {
+  "title": "A Multi-Stage NLP Framework for Enterprise Data Protection in Public LLM Interactions",
+  "authors": [
+   "Sunil Gentyala",
+   "Nimmagari Tejasri",
+   "Sunil Kumar Mudusu"
+  ],
+  "venue": "IEEE ICIRCA 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/abstract/document/11570292",
+  "doi": "10.1109/icirca69024.2026.11570292"
+ },
+ {
+  "title": "The Metamorphosis of Access: Strategic Imperatives for Identity 3.0 and Zero Trust Integration in Critical Infrastructure",
+  "authors": [
+   "Sunil Gentyala",
+   "Floriano Caprio",
+   "Sunil Kumar Mudusu",
+   "Suresh Kumar Darisi",
+   "Satish Kumar Allani"
+  ],
+  "venue": "IEEE SmartNets 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11604842",
+  "doi": "10.1109/SmartNets69662.2026.11604842"
+ },
+ {
+  "title": "SybilShield-Core: A Composite Trust Scoring Framework for Sybil Attack Mitigation in Permissionless Blockchain Networks",
+  "authors": [
+   "Sunil Gentyala",
+   "K Sanjeevaiah",
+   "Suresh Kumar Darisi"
+  ],
+  "venue": "IEEE ICICDS 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11604799",
+  "doi": "10.1109/ICICDS70526.2026.11604799"
+ },
+ {
+  "title": "AdaptFlow: A Self-Optimizing AI-Driven Data Pipeline Architecture for Real-Time Inference at Scale",
+  "authors": [
+   "Sunil Kumar Mudusu",
+   "Sreepal Reddy Bolla",
+   "Sunil Gentyala"
+  ],
+  "venue": "IEEE ICETM 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11648130",
+  "doi": "10.1109/ICETM68138.2026.11648130"
+ },
+ {
+  "title": "Temporal Probabilistic Modeling with Uncertainty-Aware LSTM Networks for Self-Aware Fault Detection and Prognostics in Autonomous Aerospace Systems",
+  "authors": [
+   "Rakesh Prakash",
+   "Soujanya Jagadeesh",
+   "Sunil Gentyala"
+  ],
+  "venue": "IEEE MetroAeroSpace 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11646653",
+  "doi": "10.1109/MetroAeroSpace69299.2026.11646653"
+ },
+ {
+  "title": "Adaptive Neural Control for Multi-UAV Swarm Coordination: Trajectory Tracking, Collision Avoidance, and Wind Disturbance Rejection",
+  "authors": [
+   "Rakesh Prakash",
+   "Soujanya Jagadeesh",
+   "Sunil Gentyala"
+  ],
+  "venue": "IEEE MetroAeroSpace 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11646672",
+  "doi": "10.1109/MetroAeroSpace69299.2026.11646672"
+ },
+ {
+  "title": "Quantum-Assisted Clinical Risk Factor Selection for Diabetes Readmission Prediction",
+  "authors": [
+   "Floriano Caprio",
+   "Matteo Tortora",
+   "Paolo Soda",
+   "Sunil Gentyala"
+  ],
+  "venue": "CIBB 2026 (Quantum AI for Bioinformatics track)",
+  "year": 2026,
+  "status": "Accepted",
+  "url": "",
+  "doi": ""
+ },
+ {
+  "title": "Governing Heterogeneous API Gateway Estates Through Policy-as-Code: An Engineering Management Perspective",
+  "authors": [
+   "Sunil Gentyala",
+   "Floriano Caprio",
+   "Praveen Kumar Mannam",
+   "Angajala Tejaswi",
+   "Rakesh Prakash",
+   "Akhila Kasturi"
+  ],
+  "venue": "IEEE TEMSCON GLOBAL 2026",
+  "year": 2026,
+  "status": "Accepted",
+  "url": "",
+  "doi": ""
+ },
+ {
+  "title": "Zero-Trust Data Pipelines for AI Systems: A Framework for Secure, Verifiable, and Auditable Data Engineering",
+  "authors": [
+   "Sunil Kumar Mudusu",
+   "Sunil Gentyala"
+  ],
+  "venue": "JRTCSE, Vol. 14, No. 2, pp. 10-25",
+  "year": 2026,
+  "status": "Journal",
+  "url": "https://doi.org/10.70589/JRTCSE.2026.14.2.2",
+  "doi": "10.70589/JRTCSE.2026.14.2.2"
+ },
+ {
+  "title": "On Auditing MCP Deployments",
+  "authors": [
+   "Sunil Gentyala",
+   "Praveen Kumar Mannam"
+  ],
+  "venue": "ISACA Journal, 2026 Volume 5",
+  "year": 2026,
+  "status": "Journal",
+  "url": "https://www.isaca.org/resources/isaca-journal/issues/2026/volume-5/on-auditing-mcp-deployments",
+  "doi": ""
+ }
+]
