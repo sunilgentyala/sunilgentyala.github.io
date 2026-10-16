@@ -86,7 +86,8 @@ h1{background:linear-gradient(100deg,var(--ink) 30%,var(--c-ai) 62%,var(--c-pqc)
 .stats div:nth-child(2) b{background:linear-gradient(120deg,var(--c-def),var(--c-pqc));-webkit-background-clip:text;background-clip:text}
 .stats div:nth-child(3) b{background:linear-gradient(120deg,var(--c-priv),var(--c-off));-webkit-background-clip:text;background-clip:text}
 .stats div:nth-child(4) b{background:linear-gradient(120deg,var(--c-clin),var(--c-ai));-webkit-background-clip:text;background-clip:text}
-.grid>li{display:flex}.grid>li>.area{flex:1}
+.grid>li:not(.card){display:flex}.grid>li>.area{flex:1}
+.grid>li.card{display:flex;flex-direction:column;gap:2px}.grid>li.card .tags{margin-top:auto!important;padding-top:6px}.grid>li.card p{margin:.2em 0}.grid>li.card h3{margin-bottom:.1em}
 .area{position:relative;overflow:hidden;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(6px)}
 .area::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--ac)}
 .area::after{content:"";position:absolute;right:-40px;top:-40px;width:130px;height:130px;border-radius:50%;background:var(--ac);opacity:.13;transition:transform .3s,opacity .3s}
