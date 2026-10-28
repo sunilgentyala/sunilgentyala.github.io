@@ -1,5 +1,18 @@
 [
  {
+  "title": "Anomaly Detection by using Dynamic Knowledge Graph with Temporal Attention Network",
+  "authors": [
+   "Sunil Kumar Mudusu",
+   "Sunil Gentyala",
+   "Manasa Pendyala"
+  ],
+  "venue": "IEEE ICoICI 2026",
+  "year": 2026,
+  "status": "Published",
+  "url": "https://ieeexplore.ieee.org/document/11724336",
+  "doi": "10.1109/ICoICI69824.2026.11724336"
+ },
+ {
   "title": "Post-Quantum Security Framework for Model Context Protocol Using ContextGuard",
   "authors": [
    "Sunil Gentyala",
